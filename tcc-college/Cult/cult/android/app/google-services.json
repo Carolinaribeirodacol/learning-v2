@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "301389478508",
+    "firebase_url": "https://cult-5bf11.firebaseio.com",
+    "project_id": "cult-5bf11",
+    "storage_bucket": "cult-5bf11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301389478508:android:a1b71ccff65886110eb649",
+        "android_client_info": {
+          "package_name": "com.example.cult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301389478508-0dbmkc94c3d76ainir76mhgqti5be9q4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5O2zld3084EyLjG8YExjSwiQtulNhXDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "301389478508-0dbmkc94c3d76ainir76mhgqti5be9q4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+// Change code below this line
+
+var someAdjective = "god";
+var myStr = "Learning to code is ";
+myStr = myStr += someAdjective;

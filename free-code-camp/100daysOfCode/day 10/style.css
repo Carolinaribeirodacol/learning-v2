@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+}
+
+.container {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "advert header"
+    "advert content"
+    "advert footer";
+  background-color: black;
+}
+.item1 {
+  padding-left: 50px;
+  grid-area: header;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.item3 {
+  background-image: url('free-download-dark-designs-background-wallpaper-in-x_dark_designs_background-wide1.jpg');
+  grid-area: content;
+  grid-template-columns: 50% 50%;
+  display: grid;
+  align-items: center;
+}
+
+.item4 {
+  background: black;
+  grid-area: footer;
+  color: white;
+  padding-left: 50px;
+}
+
+.itemOne {
+  background: white;
+  opacity: 70%;
+  width: 100%;
+  height: 70%;
+  border: none;
+  padding: 50px;
+}
+
+.itemTwo {
+  width: 100%;
+  height: 70%;
+  background-repeat: repeat;
+  background-size: cover;
+  padding: 50px;
+
+}
