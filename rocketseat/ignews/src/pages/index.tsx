@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { SubscribeButton } from '../components/Header/SubscribeButton';
 import styles from './home.module.scss';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { stripe } from '../services/stripe';
 
 interface HomeProps {
@@ -10,6 +10,10 @@ interface HomeProps {
     amount: number;
   };
 }
+
+// Client-side => carrega através de uma ação do usuário
+// Server-side => carrega assim que a página é carregada
+// Static site generation => dados estáticos que podem ser utilizados para todos
 
 export default function Home({ product }: HomeProps) {
   return (
@@ -38,7 +42,7 @@ export default function Home({ product }: HomeProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1LimEgBRtkosQaMMb0bOHNwQ');
 
   const product = {
@@ -53,5 +57,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
     props: {
       product,
     },
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
