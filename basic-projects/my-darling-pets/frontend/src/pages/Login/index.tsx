@@ -1,15 +1,14 @@
 import { gql, useMutation } from "@apollo/client";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button/Button";
 import { TextField } from "../../components/TextField/TextField";
 import { client } from "../../lib/apollo";
 import { Container } from "./style";
 
 const LOGIN_USER = gql`
-  query loginUser($email: String!, $password: String!) {
-    loginUser(email: $email, password: $password) {
-      token
+  mutation Login($email: String, $password: String) {
+    login(email: $email, password: $password) {
+      access_token
     }
   }
 `;
@@ -18,7 +17,6 @@ export function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [login] = useMutation(LOGIN_USER);
-  const navigate = useNavigate();
 
   async function handleLogin(event: FormEvent) {
     event.preventDefault(); // Não atualiza a página quando efetua o submit;
@@ -45,10 +43,6 @@ export function Login() {
           },
         });
       },
-      onCompleted: () => {
-        navigate('/');
-      }
-      // refetchQueries: [GET_USER]
     });
   }
 

@@ -1,5 +1,5 @@
-import { gql, useQuery } from "@apollo/client";
-import { Container } from "./style";
+import { gql, useQuery } from "@apollo/client"
+import { Container } from "./style"
 
 const GET_CURRENT_USER = gql`
   query {
@@ -8,6 +8,7 @@ const GET_CURRENT_USER = gql`
     }
 
     pets {
+      id,
       name,
       breed,
       age,
@@ -15,13 +16,14 @@ const GET_CURRENT_USER = gql`
       height
     }
   }
-`;
+`
+
 
 export function Pets() {
-  const { data, loading } = useQuery(GET_CURRENT_USER);
+  const { data, loading } = useQuery(GET_CURRENT_USER)
 
   if (loading) {
-    return <p>Carregando...</p>;
+    return <p>Carregando...</p>
   }
 
   return (
@@ -39,7 +41,8 @@ export function Pets() {
               </tr>
             </thead>
             <tbody>
-              {data?.pets.map((pet) => {
+              {data.pets}
+              {/* {data?.pets.map((pet) => {
                 return (
                   <tr key={pet.id}>
                     <td>{pet.name}</td>
@@ -49,7 +52,7 @@ export function Pets() {
                     <td>{pet.height}</td>
                   </tr>
                 );
-              })}
+              })} */}
             </tbody>
           </table>
         </div>
