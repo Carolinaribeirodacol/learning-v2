@@ -5,7 +5,7 @@ using Vector2 = Microsoft.Xna.Framework.Vector2;
 
 namespace TrexRunner.Graphics
 {
-    internal class Sprite
+    public class Sprite
     {
         public Texture2D Texture { get; private set; }
 

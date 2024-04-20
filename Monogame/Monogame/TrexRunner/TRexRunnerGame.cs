@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using TrexRunner.Entities;
 
 namespace TrexRunner;
 
@@ -13,6 +14,13 @@ public class TRexRunnerGame : Game
     private const string ASSET_NAME_SFX_BUTTON_PRESS = "button-press";
     private const string ASSET_NAME_SFX_SCORE_REACHED = "score-reached";
 
+   // Tamanho da tela de jogo
+    public const int WINDOW_WIDTH = 600;
+    public const int WINDOW_HEIGHT = 150;
+
+    public const int TREX_START_POS_Y = WINDOW_HEIGHT - 16;
+    public const int TREX_START_POS_X = 1;
+
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
 
@@ -21,6 +29,8 @@ public class TRexRunnerGame : Game
     private SoundEffect _sfxScoreReached;
 
     private Texture2D _spriteSheetTexture;
+
+    private Trex _trex;
 
     public TRexRunnerGame()
     {
@@ -34,6 +44,10 @@ public class TRexRunnerGame : Game
         // TODO: Add your initialization logic here
 
         base.Initialize();
+
+        _graphics.PreferredBackBufferHeight = WINDOW_HEIGHT;
+        _graphics.PreferredBackBufferWidth = WINDOW_WIDTH;
+        _graphics.ApplyChanges();
     }
 
     protected override void LoadContent()
@@ -45,6 +59,8 @@ public class TRexRunnerGame : Game
         _sfxScoreReached = Content.Load<SoundEffect>(ASSET_NAME_SFX_SCORE_REACHED);
 
         _spriteSheetTexture = Content.Load<Texture2D>(ASSET_NAME_SPRITESHEET);
+
+        _trex = new Trex(_spriteSheetTexture, new Vector2(TREX_START_POS_X, TREX_START_POS_Y - Trex.TREX_DEFAULT_SPRITE_HEIGHT));
     }
 
     protected override void Update(GameTime gameTime)
@@ -59,13 +75,11 @@ public class TRexRunnerGame : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue);
+        GraphicsDevice.Clear(Color.White);
 
         _spriteBatch.Begin();
 
-        Sprite trexSprite = new Sprite(_spriteSheetTexture, 848, 0, 44, 52);
-
-        trexSprite.Draw(_spriteBatch, new Vector2(20,20));
+        _trex.Draw(_spriteBatch, gameTime);
 
         _spriteBatch.End();
 

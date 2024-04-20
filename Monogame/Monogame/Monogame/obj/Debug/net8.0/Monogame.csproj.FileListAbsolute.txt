@@ -12,3 +12,18 @@ C:\Users\A Colossal\source\repos\Monogame\Monogame\obj\Debug\net8.0\refint\Monog
 C:\Users\A Colossal\source\repos\Monogame\Monogame\obj\Debug\net8.0\Monogame.pdb
 C:\Users\A Colossal\source\repos\Monogame\Monogame\obj\Debug\net8.0\Monogame.genruntimeconfig.cache
 C:\Users\A Colossal\source\repos\Monogame\Monogame\obj\Debug\net8.0\ref\Monogame.dll
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\bin\Debug\net8.0\Monogame.exe
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\bin\Debug\net8.0\Monogame.deps.json
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\bin\Debug\net8.0\Monogame.runtimeconfig.json
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\bin\Debug\net8.0\Monogame.dll
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\bin\Debug\net8.0\Monogame.pdb
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.AssemblyInfoInputs.cache
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.AssemblyInfo.cs
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.sourcelink.json
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.dll
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\refint\Monogame.dll
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.pdb
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\Monogame.genruntimeconfig.cache
+\\wsl.localhost\Ubuntu\home\rukado\learning\learning-v2\Monogame\Monogame\Monogame\obj\Debug\net8.0\ref\Monogame.dll

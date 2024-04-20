@@ -8,24 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\A Colossal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Rukado\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A Colossal\\source\\repos\\Monogame\\Monogame\\Monogame.csproj",
+      "projectUniqueName": "D:\\projects\\learning\\learning-v2\\Monogame\\Monogame\\Monogame\\Monogame.csproj",
       "projectName": "Monogame",
-      "projectPath": "C:\\Users\\A Colossal\\source\\repos\\Monogame\\Monogame\\Monogame.csproj",
-      "packagesPath": "C:\\Users\\A Colossal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A Colossal\\source\\repos\\Monogame\\Monogame\\obj\\",
+      "projectPath": "D:\\projects\\learning\\learning-v2\\Monogame\\Monogame\\Monogame\\Monogame.csproj",
+      "packagesPath": "C:\\Users\\Rukado\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\learning\\learning-v2\\Monogame\\Monogame\\Monogame\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\A Colossal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Rukado\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -46,11 +40,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

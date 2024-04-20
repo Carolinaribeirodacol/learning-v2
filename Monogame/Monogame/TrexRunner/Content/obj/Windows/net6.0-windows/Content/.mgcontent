@@ -4,10 +4,10 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/button-press.mp3</File>
-    <File>C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/Resources_hit.mp3</File>
-    <File>C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/Resources_score-reached.mp3</File>
-    <File>C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/TrexSpritesheet.png</File>
+    <File>D:/projects/learning/learning-v2/Monogame/Monogame/TrexRunner/Content/button-press.mp3</File>
+    <File>D:/projects/learning/learning-v2/Monogame/Monogame/TrexRunner/Content/Resources_hit.mp3</File>
+    <File>D:/projects/learning/learning-v2/Monogame/Monogame/TrexRunner/Content/Resources_score-reached.mp3</File>
+    <File>D:/projects/learning/learning-v2/Monogame/Monogame/TrexRunner/Content/TrexSpritesheet.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

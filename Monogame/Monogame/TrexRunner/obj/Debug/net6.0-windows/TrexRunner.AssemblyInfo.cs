@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrexRunner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+851ee07e8cb3e023e6eb29857d6a2f4e7c5924ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrexRunner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrexRunner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
