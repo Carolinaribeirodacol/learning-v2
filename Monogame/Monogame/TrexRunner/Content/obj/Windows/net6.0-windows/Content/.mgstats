@@ -1,0 +1,5 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/button-press.mp3","C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/bin/Windows/Content/button-press.xnb","SoundEffectProcessor","SoundEffectContent",5178,25449,0.2982276
+"C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/Resources_hit.mp3","C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/bin/Windows/Content/hit.xnb","SoundEffectProcessor","SoundEffectContent",7212,52073,0.2927305
+"C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/Resources_score-reached.mp3","C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/bin/Windows/Content/score-reached.xnb","SoundEffectProcessor","SoundEffectContent",9250,101737,0.165096
+"C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/TrexSpritesheet.png","C:/Users/A Colossal/source/repos/Monogame/TrexRunner/Content/bin/Windows/Content/TrexSpritesheet.xnb","TextureProcessor","Texture2DContent",2433,335461,0.0445496
