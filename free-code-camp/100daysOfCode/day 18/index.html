@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section id="header" class="main-section">
+            <img id="header-img" src="logo.png" alt="logo">
+            <nav id="nav-bar">
+                <a class="nav-link-header" href="">Docs</a>
+                <a class="nav-link-header" href="">Tutorial</a>
+                <a class="nav-link-header" href="">Blog</a>
+                <a class="nav-link-header" href="">Community</a>
+            </nav>
+        </section>
+        <section id="navbar" class="main-section">
+            <nav id="navbar-section">
+                <a class="nav-link" href="">JSX In Depth</a>
+                <a class="nav-link" href="">Optimizing Performance</a>
+                <a class="nav-link" href="">Portals</a>
+                <a class="nav-link" href="">Profiler API</a>
+                <a class="nav-link" href="">React Without ES6</a>
+            </nav>
+        </section>
+        <section id="paragraph" class="main-section">
+            <h1>JSX In Depth</h1>
+            <p>
+                Fundamentalmente, JSX é somente um açúcar sintático (syntactic sugar) 
+                para a função <span id="code-paragraph">React.createElement(component, props, ...children)</span>. O código JSX:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>&lt<span id="yellow">MyButton</span> <span id="purple">color</span><span id="green">="blue"</span> <span id="purple">shadowSize={<span id="blue">2</span>}</span>&gt
+    Click Me
+&lt/<span id="yellow">MyButton</span>&gt</code>
+                </pre>
+            </section>
+            <p>
+                é compilado para:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>React.<span id="blue">createElement</span>(
+    MyButton,
+    {color: <span id="green">'blue'</span>, shadowSize: <span id="blue">2</span>},
+    <span id="green">'Clique aqui'</span>
+)</code>
+                </pre>
+            </section>
+            <p>
+                Você também pode fechar a tag imediatamente se não tiver elementos filhos. Então:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>&lt<span id="pink">div</span><span id="purple"> className</span> <span id="green">="sidebar"/</span>&gt</code>
+                </pre>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

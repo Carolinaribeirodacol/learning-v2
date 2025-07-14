@@ -1,0 +1,7 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/background02.png","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/background02.xnb","TextureProcessor","Texture2DContent",6832,245845,0.4883047
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/decorations.png","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/decorations.xnb","TextureProcessor","Texture2DContent",18218,640085,0.0682572
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/Fonts/TextFont.spritefont","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/Fonts/TextFont.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.3636637
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/grounds.png","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/grounds.xnb","TextureProcessor","Texture2DContent",19081,360085,0.0449562
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/houses.png","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/houses.xnb","TextureProcessor","Texture2DContent",28664,640085,0.0940104
+"C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/walk-spritesheet.png","C:/Users/A Colossal/source/repos/grindelia/grindelia/Content/bin/Windows/walk-spritesheet.xnb","TextureProcessor","Texture2DContent",1903,38485,0.0375333

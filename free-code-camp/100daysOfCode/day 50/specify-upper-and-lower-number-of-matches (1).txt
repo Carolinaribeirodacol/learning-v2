@@ -1,0 +1,4 @@
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+// \s para ignorar o espaço
+let result = ohRegex.test(ohStr);

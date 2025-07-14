@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <section id="header" class="main-section">
+            <img id="header-img" src="logo.png" alt="logo">
+            <nav id="nav-bar">
+                <a class="nav-link-header" href="">Docs</a>
+                <a class="nav-link-header" href="">Tutorial</a>
+                <a class="nav-link-header" href="">Blog</a>
+                <a class="nav-link-header" href="">Community</a>
+            </nav>
+        </section>
+        <section id="navbarTopics" class="main-section">
+            <nav id="navbar-section">
+                <a class="nav-link" href="#topic1">JSX In Depth</a>
+                <a class="nav-link" href="#topic2">Especificando o Tipo do Elemento React</a>
+                <a class="nav-link" href="#topic3">Props no JSX</a>
+                <a class="nav-link" href="#topic4">Elementos Filhos em JSX</a>
+            </nav>
+        </section>
+        <section id="paragraph" class="main-section">
+            <h1 id="topic1">JSX In Depth</h1>
+            <p>
+                Fundamentalmente, JSX é somente um açúcar sintático (syntactic sugar) 
+                para a função <span id="code-paragraph">React.createElement(component, props, ...children)</span>. O código JSX:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>&lt<span id="yellow">MyButton</span> <span id="purple">color</span><span id="green">="blue"</span> <span id="purple">shadowSize={<span id="blue">2</span>}</span>&gt
+    Click Me
+&lt/<span id="yellow">MyButton</span>&gt</code>
+                </pre>
+            </section>
+            <p>
+                é compilado para:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>React.<span id="blue">createElement</span>(
+    MyButton,
+    {color: <span id="green">'blue'</span>, shadowSize: <span id="blue">2</span>},
+    <span id="green">'Clique aqui'</span>
+)</code>
+                </pre>
+            </section>
+            <p>
+                Você também pode fechar a tag imediatamente se não tiver elementos filhos. Então:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code>&lt<span id="pink">div</span><span id="purple"> className</span> <span id="green">="sidebar"/</span>&gt</code>
+                </pre>
+            </section>
+            <p>
+                Se você quiser testar como um JSX em específico é convertido em JavaScript, você pode usar<a href="https://babeljs.io/repl/#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=react&prettier=false&targets=&version=7.12.12&externalPlugins=" id="color-link">o compilador online do Babel.</a>
+            </p>
+            <h1 id="topic2">Especificando o Tipo do Elemento React</h1>
+            <p>
+                A primeira parte de uma tag JSX determina o tipo do elemento React.
+                Tipos que começam com letra maiúscula se referem a um componente React. Essas tags são compiladas para uma referência direta da variável nomeada, então se você usar a expressão JSX <span id="pink-bg" href="">&ltFoo /&gt</span>, Foo tem que estar no escopo.  
+            </p>
+            <p>
+                Já que JSX compila em chamadas para <span id="pink-bg">React.createElement</span>, a biblioteca <span id="pink-bg">React</span> também tem sempre que estar no escopo do seu código JSX.
+                Por exemplo, os dois imports são necessários nesse código, apesar de que <span id="pink-bg">React</span> e <span id="pink-bg">CustomButton</span> não são referenciados diretamente pelo JavaScript:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+    <code><span id="purple">import</span> React <span id="purple">from</span> <span id="green">'react'</span>;
+<span id="purple">import</span> CustomButton <span id="purple">from</span> <span id="green">'./CustomButton'</span>;
+
+<span id="purple">function</span> <span id="blue">WarningButton()</span> {
+    <span id="grey">// return React.createElement(CustomButton, {color: 'red'}, null);</span>
+    return &lt<span id="yellow">CustomButton</span> <span id="purple">color</span><span id="green">="red"</span>/&gt;
+}</code>
+                </pre>
+            </section>
+            <p>
+                Se você não usa um bundler JavaScript e carrega o React de uma tag <span id="pink-bg">&ltscript&gt</span>, 
+                ele já estará no escopo global como <span id="pink-bg">React</span>.
+            </p>
+            <h2>Usando Notação Pontuada (Dot Notation) Para Tipos JSX</h2>
+            <p>
+                Você também pode se referir a um componente React usando notação pontuada no próprio JSX. 
+                Isso é conveniente se você tem um único módulo que exporta vários componentes React. Por exemplo, 
+                se <span id="pink-bg">MyComponents.DatePicker</span> é um componente, você pode usá-lo diretamente no JSX como:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code><span id="purple">import</span> React <span id="purple">from</span> <span id="green">'react'</span>;
+
+<span id="purple">const</span> MyComponents = {
+  <span id="blue">DatePicker</span>: <span id="purple">function</span> <span id="blue">DatePicker</span>(props) {
+    <span id="purple">return</span> &lt<span id="pink">div</span>&gtImagine um datepicker {props.color} aqui.&lt/<span id="pink">div</span>&gt;
+  }
+}
+
+<span id="purple">function</span> <span id="blue">BlueDatePicker</span>() {
+  <span id="purple">return</span> &lt<span id="yellow">MyComponents.DatePicker</span> <span id="purple">color</span><span id="green">="blue"</span> /&gt;
+}
+                    </code>
+                </pre>
+            </section>
+            <h2>Componentes Defindos pelo Usuário Precisam Começar com Letras Maiúsculas</h2>
+            <p>
+                Quando um tipo elemento começar com uma letra minúscula, ele se refere a um componente interno 
+                <span id="pink-bg">&ltdiv&gt</span> 
+                ou <span id="pink-bg">&ltspan&gt</span> e resulta na string <span id="pink-bg">'div'</span> ou 
+                <span id="pink-bg">'span'</span> passada para <span id="pink-bg">React.createElement.</span> Tipos que 
+                começam com letra maiúscula como <Foo /> são compilados para <span id="pink-bg">React.createElement(Foo)</span> e correspondem a 
+                um componente definido ou importado no seu arquivo JavaScript.
+                Nós recomendamos nomear componentes com letras maiúsculas. Se você realmente tiver um componente 
+                que comece com letra minúscula, guarde-o em uma variável que comece com letra maiúscula antes de 
+                usá-lo no JSX. <br><br>Por exemplo, esse código não vai rodar como esperado:
+            </p>
+            <section id="code" class="main-section">
+                <pre>
+                    <code><span id="purple">import</span> React <span id="purple">from</span> <span id="green">'react'</span>;
+
+<span id="grey">// Errado! Isso é um componente e devia começar com letra maiúscula:</span>
+<span id="purple">function</span> <span id="blue">hello</span>(props) {
+  <span id="grey">// Correto! Esse uso da &ltdiv&gt é legítimo porque div é uma tag HTML válida:</span>
+  <span id="purple">return</span> &lt<span id="pink">div</span>&gtHello {props.toWhat}&lt/<span id="pink">div</span>&gt;
+}
+
+<span id="purple">function</span> <span id="blue">HelloWorld</span>() {
+  <span id="grey">// Errado! O React pensa que &lthello /&gt é uma tag HTML porque não começa com letra maiúscula:</span>
+  <span id="purple">return</span> &lt<span id="pink">hello</span> <span id="purple">toWhat</span><span id="green">="World"</span>/&gt;
+}
+                    </code>
+                </pre>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

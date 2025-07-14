@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-custom {
+        background-image: url('../../../public/assets/images/background-image-nav.jpg');
+    }
+
+    .bg-custom-banner {
+        background-image: url('../../../public/assets/images/cafe03.jpg');
+    }
+
+    .bg-custom-rating {
+        background-image: url('../../../public/assets/images/cafe03.jpg');
+    }
+}

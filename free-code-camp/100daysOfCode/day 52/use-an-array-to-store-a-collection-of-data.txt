@@ -1,0 +1,5 @@
+let yourArray = ['um', 2, 3.0, 'quatro', true];
+
+console.log(yourArray.length);
+
+yourArray.length;

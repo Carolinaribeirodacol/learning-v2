@@ -1,0 +1,16 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum > endNum) {
+    return [];
+  } else {
+    const array = rangeOfNumbers(startNum + 1, endNum);
+    array.unshift(startNum);
+    return array;
+  }
+};
+
+rangeOfNumbers(10, 10)
+
+// num inicial e final devem ser os mesmos
+// num inicial deve ser menor que o numero final
+// nao pode usar loops
+// retornar array
